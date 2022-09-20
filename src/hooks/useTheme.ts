@@ -15,7 +15,7 @@ const useTheme = () => {
   const [theme, setTheme] = useState<string | null>(null)
 
   const themeToggler = useCallback(() => {
-    const nextTheme = theme === LIGHT ? DARK : LIGHT
+    const nextTheme = theme === LIGHT ? LIGHT : DARK 
     setTheme(nextTheme)
     window.__setPreferredTheme(nextTheme)
   }, [theme])
